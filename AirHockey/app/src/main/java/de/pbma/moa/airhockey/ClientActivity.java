@@ -65,7 +65,6 @@ public class ClientActivity extends AppCompatActivity implements SensorEventList
     String myUUID;
     MqttClientLayoutBinding binding;
     Intent intent;
-    int playStyle;
 
 
     private static final int WINDOW_SIZE = 5;
