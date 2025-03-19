@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.main.OptionsFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Username:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:inputType="text" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playstyle"
+        android:textSize="20sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Goals to Win"
+           android:textColor="@color/black"
+           android:textColorLink="@color/black"
+           android:textSize="20sp" />
+
+       <EditText
+           android:id="@+id/etGoalGoal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="20sp"/>
+
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBroker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Broker Url:"
+        android:textColor="@color/black"
+        android:layout_marginVertical="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etBrokerUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Broker Url"
+      />
+
+    <TextView
+        android:id="@+id/tvMqttUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MqTT  username:"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etMqttUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Broker Username"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMqttPassword"
+        android:text="MqTT Password:"
+        android:layout_marginVertical="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/etMqTTPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter MqTT Server Password"
+        android:inputType="textPassword"
+        android:textSize="18dp" />
+
+    <de.pbma.moa.airhockey.CustomButton
+        android:id="@+id/btnSave"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="speichern"
+        android:background="@drawable/button_pixel"/>
+
+</LinearLayout>
